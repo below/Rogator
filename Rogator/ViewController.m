@@ -42,7 +42,7 @@
 }
 
 - (void) zufallsfrage {
-    long frageNr = rand()  % (self.fragenKatalog.count + 1) - 1;
+    long frageNr = rand()  % (self.fragenKatalog.count);
     if (frageNr < self.fragenKatalog.count) {
         self.aktuelleFrage = [self.fragenKatalog objectAtIndex:frageNr];
     }
